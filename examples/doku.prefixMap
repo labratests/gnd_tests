@@ -1,0 +1,4 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix wd: <https://doku.wikibase.wiki/entity/> 
+prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
+prefix : <https://doku.wikibase.wiki/schema/>

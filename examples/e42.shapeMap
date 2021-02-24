@@ -1,0 +1,8 @@
+SPARQL """
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT * WHERE { 
+    ?person wdt:P106 wd:Q36180 
+} LIMIT 5
+ """@<AuthorShape>

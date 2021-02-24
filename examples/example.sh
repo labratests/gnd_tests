@@ -1,0 +1,1 @@
+shexs wikibase --schema E42.shex --endpoint https://query.wikidata.org/sparql --shapeMap e42.shapeMap
