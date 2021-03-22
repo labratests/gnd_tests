@@ -1,0 +1,12 @@
+[
+  {
+    "title": "gndWork embedded",
+    "desc": "Example of gndWork embedded",
+    "schemaURL": "gndWork.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "Q1329.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1329",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Work"
+  }
+]

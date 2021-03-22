@@ -4,9 +4,9 @@ prefix wdt: <https://doku.wikibase.wiki/prop/direct/>
 prefix ui: <http://www.w3.org/ns/ui#>
 prefix : <https://doku.wikibase.wiki/schema/>
 
-start = @:GND_Entity
+start = @:GND_Work
 
-:GND_Entity {
+:GND_Work {
  wdt:P114  [ wd:Q14 ]         // ui:label "instance of"@en ;
  wdt:P61   @:Work             // ui:label "Entity type"@en ;
  wdt:P66   IRI                // ui:label "GND-URI"@en ;
