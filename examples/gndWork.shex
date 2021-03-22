@@ -19,8 +19,8 @@ start = @:GND_Work
  wdt:P167  xsd:string*        // ui:label "Date of publication"@en
 }
 
-:Work IRI
+:Work {}
 
-:CatalogingLevel IRI
+:CatalogingLevel {}
 
-:Author IRI
+:Author {}
