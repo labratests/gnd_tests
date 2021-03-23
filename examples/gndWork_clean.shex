@@ -7,20 +7,20 @@ prefix : <https://doku.wikibase.wiki/schema/>
 start = @:GND_Work
 
 :GND_Work {
- wdt:P114  [ wd:Q14 ]       ;  # "Instanz von" 
- wdt:P61   @:Work           ;  # "Entitätentyp" 
- wdt:P66   IRI              ;  # "GND-URI" 
- wdt:P101  xsd:string       ;  # "GND-Number" 
+ wdt:P114  [ wd:Q14 ]         // ui:label "instance of"@en ;
+ wdt:P61   @:Work             // ui:label "Entity type"@en ;
+ wdt:P66   IRI                // ui:label "GND-URI"@en ;
+ wdt:P101  xsd:string         // ui:label "GND-Number"@en ;
 
- wdt:P91   xsd:string        ; # "Werk – Bevorzugter Titel" 
- wdt:P97   xsd:string*       ; # "Werk – Abweichender Titel" 
- wdt:P62   @:CatalogingLevel ; # "Katalogisierungslevel" 
- wdt:P158  @:Author          ; # "erste Verfasserschaft" 
- wdt:P167  xsd:string*       ; # "Erscheinungsdaten"
+ wdt:P91   xsd:string         // ui:label "Work - preferred title"@en ;
+ wdt:P97   xsd:string*        // ui:label "Work - variant title"@en ;
+ wdt:P62   @:CatalogingLevel  // ui:label "Cataloging level"@en ;
+ wdt:P158  @:Author           // ui:label "first author"@en ;
+ wdt:P167  xsd:string*        // ui:label "Date of publication"@en
 }
 
-:Work {}
+:Work IRI 
 
-:CatalogingLevel {}
+:CatalogingLevel IRI
 
-:Author {}
+:Author IRI 
