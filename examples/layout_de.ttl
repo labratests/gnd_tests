@@ -1,0 +1,12 @@
+PREFIX ui: <http://www.w3.org/ns/ui#>
+PREFIX layout: <http://janeirodigital.com/layout#>
+prefix : <https://doku.wikibase.wiki/schema/>
+
+<#byPath> a layout:Layout ; 
+ layout:annotation
+  [ layout:path "<https://doku.wikibase.wiki/schema/GND_Work>" ;
+    ui:label "GND Entity" ],
+  [ :path "<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P114>" ;
+    ui:label "Instanz von" ;
+  ]
+.

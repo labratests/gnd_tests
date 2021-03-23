@@ -1,0 +1,26 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix wd: <https://doku.wikibase.wiki/entity/> 
+prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
+prefix ui: <http://www.w3.org/ns/ui#>
+prefix : <https://doku.wikibase.wiki/schema/>
+
+start = @:GND_Work
+
+:GND_Work {
+ wdt:P114  [ wd:Q14 ]       ;  # "Instanz von" 
+ wdt:P61   @:Work           ;  # "Entitätentyp" 
+ wdt:P66   IRI              ;  # "GND-URI" 
+ wdt:P101  xsd:string       ;  # "GND-Number" 
+
+ wdt:P91   xsd:string        ; # "Werk – Bevorzugter Titel" 
+ wdt:P97   xsd:string*       ; # "Werk – Abweichender Titel" 
+ wdt:P62   @:CatalogingLevel ; # "Katalogisierungslevel" 
+ wdt:P158  @:Author          ; # "erste Verfasserschaft" 
+ wdt:P167  xsd:string*       ; # "Erscheinungsdaten"
+}
+
+:Work {}
+
+:CatalogingLevel {}
+
+:Author {}
