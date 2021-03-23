@@ -8,5 +8,15 @@
     "dataURL": "Q1329.ttl",
     "node": "https://doku.wikibase.wiki/entity/Q1329",
     "shape": "https://doku.wikibase.wiki/schema/GND_Work"
+  },
+  {
+    "title": "gndWork embedded (deutschland)",
+    "desc": "Example of gndWork embedded (deutschland)",
+    "schemaURL": "gndWork_de.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "Q1329.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1329",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Work"
   }
 ]
