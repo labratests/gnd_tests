@@ -8,10 +8,10 @@ PREFIX wdt: <https://doku.wikibase.wiki/prop/direct/>
     ui:label "GND Work" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P114>" ;
-    ui:label "Instance of" 
+    ui:label "Instanz von" 
   ], 
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P61>" ;
-    ui:label "Entity type" 
+    ui:label "Entitätentyp" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P66>" ;
     ui:label "GND-URI" 
@@ -20,18 +20,18 @@ PREFIX wdt: <https://doku.wikibase.wiki/prop/direct/>
     ui:label "GND-Number" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P91>" ;
-    ui:label "Work - preferred title" 
+    ui:label "Werk – Bevorzugter Titel" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P97>" ;
-    ui:label "Work - variant title" 
+    ui:label "Werk – Abweichender Titel" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P62>" ;
-    ui:label "Cataloging level" 
+    ui:label "Katalogisierungslevel" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P158>" ;
-    ui:label "First author" 
+    ui:label "erste Verfasserschaft" 
   ],
   [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P167>" ;
-    ui:label "Date of publication" 
+    ui:label "Erscheinungsdaten" 
   ] 
 ] .

@@ -20,13 +20,23 @@
     "shape": "https://doku.wikibase.wiki/schema/GND_Work"
   },
   {
-    "title": "gndWork embedded (external layout))",
-    "desc": "Example of gndWork (external layout)",
+    "title": "gndWork (external layout English))",
+    "desc": "Example of gndWork (external layout English)",
+    "schemaURL": "gndWork_clean.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "layout_en.ttl",
+    "dataURL": "Q1329.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1329",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Work"
+  },
+  {
+    "title": "gndWork (external layout Deutschland))",
+    "desc": "Example of gndWork (external layout German)",
     "schemaURL": "gndWork_clean.shex",
     "schemaFormat": "ShExC",
     "layoutURL": "layout_de.ttl",
     "dataURL": "Q1329.ttl",
     "node": "https://doku.wikibase.wiki/entity/Q1329",
     "shape": "https://doku.wikibase.wiki/schema/GND_Work"
-  }
+  }  
 ]
