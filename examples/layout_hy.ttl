@@ -1,0 +1,37 @@
+PREFIX ui: <http://www.w3.org/ns/ui#>
+PREFIX : <http://janeirodigital.com/layout#>
+PREFIX wd: <https://doku.wikibase.wiki/entity/> 
+PREFIX wdt: <https://doku.wikibase.wiki/prop/direct/> 
+
+[ a :Layout ; :annotation 
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>" ;
+    ui:label "GND աշխատանք" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P114>" ;
+    ui:label "օրինակ" 
+  ], 
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P61>" ;
+    ui:label "սուբյեկտի տեսակը" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P66>" ;
+    ui:label "GND-URI" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P101>" ;
+    ui:label "GND համարը" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P91>" ;
+    ui:label "Աշխատանք `նախընտրելի կոչում" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P97>" ;
+    ui:label "Աշխատանք - այլընտրանքային կոչում" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P62>" ;
+    ui:label "Կատալոգավորման մակարդակ" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P158>" ;
+    ui:label "Առաջին հեղինակ" 
+  ],
+  [ :path "@<https://doku.wikibase.wiki/schema/GND_Work>/<https://doku.wikibase.wiki/prop/direct/P167>" ;
+    ui:label "Հրապարակման ամսաթիվը" 
+  ] 
+] .
