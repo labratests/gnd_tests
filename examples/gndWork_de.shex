@@ -3,24 +3,33 @@ prefix wd: <https://doku.wikibase.wiki/entity/>
 prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
 prefix ui: <http://www.w3.org/ns/ui#>
 prefix : <https://doku.wikibase.wiki/schema/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 start = @:GND_Work
 
 :GND_Work {
+ rdfs:label rdf:langString *  // ui:label "Bezeichnung"@de ;   
  wdt:P114  [ wd:Q14 ]         // ui:label "Instanz von"@de ;
- wdt:P61   @:Work             // ui:label "Entitätentyp"@en ;
- wdt:P66   IRI                // ui:label "GND-URI"@en ;
- wdt:P101  xsd:string         // ui:label "GND-Number"@en ;
+ wdt:P61   @:Work             // ui:label "Entitätentyp"@de ;
+ wdt:P66   IRI                // ui:label "GND-URI"@de ;
+ wdt:P101  xsd:string         // ui:label "GND-Number"@de ;
 
- wdt:P91   xsd:string         // ui:label "Werk – Bevorzugter Titel"@en ;
- wdt:P97   xsd:string*        // ui:label "Werk – Abweichender Titel"@en ;
- wdt:P62   @:CatalogingLevel  // ui:label "Katalogisierungslevel"@en ;
- wdt:P158  @:Author           // ui:label "erste Verfasserschaft"@en ;
- wdt:P167  xsd:string*        // ui:label "Erscheinungsdaten"@en
+ wdt:P91   xsd:string         // ui:label "Werk – Bevorzugter Titel"@de ;
+ wdt:P97   xsd:string*        // ui:label "Werk – Abweichender Titel"@de ;
+ wdt:P62   @:CatalogingLevel  // ui:label "Katalogisierungslevel"@de ;
+ wdt:P158  @:Author           // ui:label "erste Verfasserschaft"@de ;
+ wdt:P167  xsd:string*        // ui:label "Erscheinungsdaten"@de
 }
 
-:Work {}
+:Work {
+    rdfs:label rdf:langString * // ui:label "Bezeichnung"@de ;   
+}
 
-:CatalogingLevel {}
+:CatalogingLevel {
+    rdfs:label rdf:langString * // ui:label "Bezeichnung"@de ;   
+}
 
-:Author {}
+:Author {
+    rdfs:label rdf:langString * // ui:label "Bezeichnung"@de ;   
+}

@@ -3,10 +3,13 @@ prefix wd: <https://doku.wikibase.wiki/entity/>
 prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
 prefix ui: <http://www.w3.org/ns/ui#>
 prefix : <https://doku.wikibase.wiki/schema/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 start = @:GND_Work
 
 :GND_Work {
+ rdfs:label  rdf:langString * ;  
  wdt:P114  [ wd:Q14 ]         ; # instance of
  wdt:P61   @:Work             ; # Entity type 
  wdt:P66   IRI                ; # GND-URI 
@@ -19,8 +22,14 @@ start = @:GND_Work
  wdt:P167  xsd:string*        ; # Date of publication
 }
 
-:Work IRI 
+:Work {
+    rdfs:label  rdf:langString * ;  
+}
 
-:CatalogingLevel IRI
+:CatalogingLevel {
+    rdfs:label  rdf:langString * ;  
+}
 
-:Author IRI 
+:Author {
+    rdfs:label  rdf:langString * ;  
+}

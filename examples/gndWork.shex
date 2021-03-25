@@ -22,13 +22,13 @@ start = @:GND_Work
 }
 
 :Work {
-    rdfs:label rdf:langString * 
+    rdfs:label rdf:langString * // ui:label "Label"@en ;   
 }
 
 :CatalogingLevel {
-    rdfs:label rdf:langString *
+    rdfs:label rdf:langString * // ui:label "Label"@en ;   
 }
 
 :Author {
-    rdfs:label rdf:langString *
+    rdfs:label rdf:langString * // ui:label "Label"@en ;   
 }
