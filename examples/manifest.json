@@ -58,5 +58,15 @@
     "dataURL": "Q1329.ttl",
     "node": "https://doku.wikibase.wiki/entity/Q1329",
     "shape": "https://doku.wikibase.wiki/schema/GND_Work"
+  },
+  {
+    "title": "Author",
+    "desc": "Example of author",
+    "schemaURL": "gndAuthor.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "Q1325.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1325",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Author"
   }    
 ]

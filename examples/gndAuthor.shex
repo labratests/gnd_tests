@@ -1,0 +1,82 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix wd: <https://doku.wikibase.wiki/entity/> 
+prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
+prefix ui: <http://www.w3.org/ns/ui#>
+prefix : <https://doku.wikibase.wiki/schema/>
+prefix p: <https://doku.wikibase.wiki/prop/> 
+prefix ps: <https://doku.wikibase.wiki/prop/statement/> 
+prefix psv: <https://doku.wikibase.wiki/prop/statement/value/> 
+prefix psn: <https://doku.wikibase.wiki/prop/statement/value-normalized/> 
+prefix pq: <https://doku.wikibase.wiki/prop/qualifier/> 
+prefix pqv: <https://doku.wikibase.wiki/prop/qualifier/value/> 
+
+
+start = @:GND_Author
+
+:GND_Author {
+ wdt:P114  [ wd:Q14 ]             // ui:label "instance of" ;
+ wdt:P61   @:Person               // ui:label "Entity type" ;
+ wdt:P62   @:CatalogingLevel      // ui:label "Cataloging level" ;
+ wdt:P66   IRI                    // ui:label "GND-URI" ;
+ wdt:P101  xsd:string             // ui:label "GND-Number" ;
+ 
+ p:P58   @:PreferredName          // ui:label "Preferred name" ;     
+ p:P59   @:VariantName     *      // ui:label "Variant name" ;
+ p:P165  @:BirthDeathDate  ?      // ui:label "date of birth and / or death" ;
+ p:P166  @:ExactDateBirthDeath ?  // ui:label "exact date of birth and death" ;
+ p:P155  @:FamilialRelationship * // ui:label "Familial relationship" ;
+}
+
+:Person [ wd:Q17 ] 
+
+:PreferredName {                      
+   ps:P58 xsd:string         // ui:label "Person - preferred name"  ;
+   pq:P41 xsd:string ?       // ui:label "Personal name" ;
+   pq:P27 xsd:string ?       // ui:label "prefix" ;
+   pq:P29 xsd:string ?       // ui:label "First name" ;       
+   pq:P21 xsd:string ?       // ui:label "Surname" ;
+   pq:P39 xsd:string ?       // ui:label "numeric designation" ;
+   pq:P34 xsd:string ?       // ui:label "Epithet, generic name, territory, title" ;
+   pq:P31 xsd:string *       // ui:label "other designation" ;
+   pq:P49 xsd:string *       // ui:label "General subdivision" ;
+   pq:P47 xsd:string *       // ui:label "note"
+ }
+
+:VariantName {
+   ps:P59  xsd:string        // ui:label "variant name"  ;
+   pq:P45  xsd:string ?      // ui:label "Data field assignment for non-Latin characters" ;
+   pq:P46  xsd:string ?      // ui:label "Font code for non-Latin characters" ;
+   pq:P36  xsd:string ?      // ui:label "Language code" ;
+   pq:P41  xsd:string ?      // ui:label "Personal name" ;
+   pq:P27  xsd:string ?      // ui:label "prefix" ;
+   pq:P29  xsd:string ?      // ui:label "First name" ;       
+   pq:P21  xsd:string ?      // ui:label "Surname" ;
+   pq:P39  xsd:string ?      // ui:label "numeric designation" ;
+   pq:P34  xsd:string ?      // ui:label "Epithet, generic name, territory, title" ;
+   pq:P31  xsd:string *      // ui:label "other designation" ;
+   pq:P49  xsd:string *      // ui:label "General subdivision" ;
+   pq:P47  xsd:string *      // ui:label "note" ;
+   pq:P169 xsd:string ?      // ui:label "Type of relation" ;
+   pq:P18 xsd:string ?       // ui:label "User community / institution" ;
+}
+
+:Coding xsd:string
+
+:CatalogingLevel [ wd:Q250 ] 
+
+:BirthDeathDate {
+    ps:P165 xsd:string      // ui:label "date of birth and / or death" ;
+    pq:P75  xsd:dateTime    // ui:label "Start of a period" ;
+    pq:P76  xsd:dateTime    // ui:label "End of a period" 
+}
+
+:ExactDateBirthDeath {
+    ps:P166 xsd:string      // ui:label "exact date of birth and death" ;
+    pq:P75  xsd:dateTime    // ui:label "Start of a period" ;
+    pq:P76  xsd:dateTime    // ui:label "End of a period" 
+}
+
+:FamilialRelationship {
+    ps:P155 IRI             // ui:label "Familial relationship" ;
+	pq:P47 xsd:string       // ui:label "note" 
+}

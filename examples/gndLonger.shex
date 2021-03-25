@@ -27,8 +27,8 @@ start = @:GND_Entity
 }
 
 :Element [ 
-    wd:Q5 # // ui:label "GND entity type: record type" 
-    wd:Q8 # // ui:label "GND cataloging level"
+    wd:Q5 # GND entity type: record type
+    wd:Q8 # GND cataloging level
 ]
 
 :Coding xsd:string
