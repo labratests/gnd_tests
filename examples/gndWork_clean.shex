@@ -15,7 +15,7 @@ start = @:GND_Work
  wdt:P91   xsd:string         ; # Work - preferred title
  wdt:P97   xsd:string*        ; # Work - variant title
  wdt:P62   @:CatalogingLevel  ; # Cataloging level
- wdt:P158  @:Author           ; # first author"
+ wdt:P158  @:Author           ; # first author
  wdt:P167  xsd:string*        ; # Date of publication
 }
 

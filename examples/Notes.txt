@@ -1,0 +1,3 @@
+Notes
+
+P8 = "zulässige Werte"@de, "xxx 1"@en ?

@@ -1,0 +1,54 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix wd: <https://doku.wikibase.wiki/entity/> 
+prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
+prefix ui: <http://www.w3.org/ns/ui#>
+prefix : <https://doku.wikibase.wiki/schema/>
+
+start = @:GND_Entity
+
+:GND_Entity {
+ wdt:P114  [ wd:Q14 ]         // ui:label "instance of" ;
+ wdt:P61   @:Work             // ui:label "Entity type" ;
+ wdt:P66   IRI                // ui:label "GND-URI" ;
+ wdt:P101  xsd:string         // ui:label "GND-Number" ;
+
+ wdt:P91   xsd:string         // ui:label "Work - preferred title" ;
+ wdt:P97   xsd:string*        // ui:label "Work - variant title" ;
+ wdt:P62   @:CatalogingLevel  // ui:label "Cataloging level" ;
+ wdt:P158  @:Author           // ui:label "first author" ;
+ wdt:P167  xsd:string*        // ui:label "Date of publication"
+}
+
+
+:Work {
+ wdt:P110 [ wd:Q1 ]           // ui:label "schema" ;
+ wdt:P2   @:Element           // ui:label "element of" ;
+ wdt:P4   @:Coding  *         // ui:label "coding" ;
+}
+
+:Element [ 
+    wd:Q5 # // ui:label "GND entity type: record type" 
+    wd:Q8 # // ui:label "GND cataloging level"
+]
+
+:Coding xsd:string
+
+:CatalogingLevel {
+ wdt:P110 [ wd:Q1 ]           // ui:label "schema" ;
+ wdt:P2   @:Element           // ui:label "element of" ;
+ wdt:P4   @:Coding  *         // ui:label "coding" ;
+ wdt:P16  xsd:string          // ui:label "authorizations" ;
+ wdt:P60  @:Type_of_record    // ui:label "applicable for data field"
+}
+
+:Author {
+ wdt:P114 [ wd:Q14 ]         // ui:label "instance of" ;
+ wdt:P61  [ wd:Q17 ]         // ui:label "Entity type" ;
+ wdt:P66  IRI                // ui:label "GND-URI" ;
+ wdt:P58  xsd:string         // ui:label "Person - preferred name"
+}
+
+:Type_of_record {
+  wdt:P110 [ wd:Q1 ] // ui:label "schema" ;
+}
+

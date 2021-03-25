@@ -20,7 +20,7 @@
     "shape": "https://doku.wikibase.wiki/schema/GND_Work"
   },
   {
-    "title": "gndWork (external layout English))",
+    "title": "gndWork (external layout English)",
     "desc": "Example of gndWork (external layout English)",
     "schemaURL": "gndWork_clean.shex",
     "schemaFormat": "ShExC",
