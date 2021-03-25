@@ -68,5 +68,25 @@
     "dataURL": "Q1325.ttl",
     "node": "https://doku.wikibase.wiki/entity/Q1325",
     "shape": "https://doku.wikibase.wiki/schema/GND_Author"
-  }    
+  },
+  {
+    "title": "Subject",
+    "desc": "Example of subject",
+    "schemaURL": "gndSubject.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "Q1326.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1326",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Subject"
+  },
+  {
+    "title": "Place",
+    "desc": "Example of place",
+    "schemaURL": "gndPlace.shex",
+    "schemaFormat": "ShExC",
+    "layoutURL": "empty.ttl",
+    "dataURL": "Q1328.ttl",
+    "node": "https://doku.wikibase.wiki/entity/Q1328",
+    "shape": "https://doku.wikibase.wiki/schema/GND_Place"
+  }
 ]

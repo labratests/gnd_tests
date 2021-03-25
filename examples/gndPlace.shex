@@ -1,0 +1,29 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix wd: <https://doku.wikibase.wiki/entity/> 
+prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
+prefix ui: <http://www.w3.org/ns/ui#>
+prefix : <https://doku.wikibase.wiki/schema/>
+prefix p: <https://doku.wikibase.wiki/prop/> 
+prefix ps: <https://doku.wikibase.wiki/prop/statement/> 
+prefix psv: <https://doku.wikibase.wiki/prop/statement/value/> 
+prefix psn: <https://doku.wikibase.wiki/prop/statement/value-normalized/> 
+prefix pq: <https://doku.wikibase.wiki/prop/qualifier/> 
+prefix pqv: <https://doku.wikibase.wiki/prop/qualifier/value/> 
+
+
+start = @:GND_Place
+
+:GND_Place {
+ wdt:P114  [ wd:Q14 ]             // ui:label "instance of" ;
+ wdt:P61   @:Place              // ui:label "Entity type" ;
+ wdt:P62   @:CatalogingLevel      // ui:label "Cataloging level" ;
+ wdt:P66   IRI                    // ui:label "GND-URI" ;
+ wdt:P101  xsd:string             // ui:label "GND-Number" ;
+ wdt:P94   xsd:string *           // ui:label "Geographic name - Preferred name" ;
+}
+
+:Place [ wd:Q153 ] 
+
+
+:CatalogingLevel [ wd:Q250 ] 
+

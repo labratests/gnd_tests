@@ -1,0 +1,1 @@
+shexs validate --schema gndWork.shex --data Q1329.ttl --shapeMap Q1329.shapeMap

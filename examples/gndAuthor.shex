@@ -22,6 +22,7 @@ start = @:GND_Author
  
  p:P58   @:PreferredName          // ui:label "Preferred name" ;     
  p:P59   @:VariantName     *      // ui:label "Variant name" ;
+ p:P164  @:Profession             // ui:label "characteristic profession" ;
  p:P165  @:BirthDeathDate  ?      // ui:label "date of birth and / or death" ;
  p:P166  @:ExactDateBirthDeath ?  // ui:label "exact date of birth and death" ;
  p:P155  @:FamilialRelationship * // ui:label "Familial relationship" ;
@@ -60,7 +61,7 @@ start = @:GND_Author
    pq:P18 xsd:string ?       // ui:label "User community / institution" ;
 }
 
-:Coding xsd:string
+# :Coding xsd:string
 
 :CatalogingLevel [ wd:Q250 ] 
 
@@ -79,4 +80,8 @@ start = @:GND_Author
 :FamilialRelationship {
     ps:P155 IRI             // ui:label "Familial relationship" ;
 	pq:P47 xsd:string       // ui:label "note" 
+}
+
+:Profession {
+    ps:P164  IRI            // ui:label "characteristic profession" 
 }
