@@ -1,26 +1,34 @@
-prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
-prefix wd: <https://doku.wikibase.wiki/entity/> 
-prefix wdt: <https://doku.wikibase.wiki/prop/direct/> 
-prefix ui: <http://www.w3.org/ns/ui#>
-prefix : <https://doku.wikibase.wiki/schema/>
+prefix xsd:  <http://www.w3.org/2001/XMLSchema#> 
+prefix wd:   <https://doku.wikibase.wiki/entity/> 
+prefix wdt:  <https://doku.wikibase.wiki/prop/direct/> 
+prefix ui:   <http://www.w3.org/ns/ui#>
+prefix :     <https://doku.wikibase.wiki/schema/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 start = @:GND_Work
 
 :GND_Work {
- wdt:P114  [ wd:Q14 ]         // ui:label "instance of"@en ;
- wdt:P61   @:Work             // ui:label "Entity type"@en ;
- wdt:P66   IRI                // ui:label "GND-URI"@en ;
- wdt:P101  xsd:string         // ui:label "GND-Number"@en ;
-
- wdt:P91   xsd:string         // ui:label "Work - preferred title"@en ;
- wdt:P97   xsd:string*        // ui:label "Work - variant title"@en ;
- wdt:P62   @:CatalogingLevel  // ui:label "Cataloging level"@en ;
- wdt:P158  @:Author           // ui:label "first author"@en ;
- wdt:P167  xsd:string*        // ui:label "Date of publication"@en
+ rdfs:label rdf:langString *   // ui:label "Label"@en ;   
+ wdt:P114   [ wd:Q14 ]         // ui:label "instance of"@en ;
+ wdt:P61    @:Work             // ui:label "Entity type"@en ;
+ wdt:P66    IRI                // ui:label "GND-URI"@en ;
+ wdt:P101   xsd:string         // ui:label "GND-Number"@en ;
+ wdt:P91    xsd:string         // ui:label "Work - preferred title"@en ;
+ wdt:P97    xsd:string*        // ui:label "Work - variant title"@en ;
+ wdt:P62    @:CatalogingLevel  // ui:label "Cataloging level"@en ;
+ wdt:P158   @:Author           // ui:label "first author"@en ;
+ wdt:P167   xsd:string*        // ui:label "Date of publication"@en
 }
 
-:Work {}
+:Work {
+    rdfs:label rdf:langString * 
+}
 
-:CatalogingLevel {}
+:CatalogingLevel {
+    rdfs:label rdf:langString *
+}
 
-:Author {}
+:Author {
+    rdfs:label rdf:langString *
+}
